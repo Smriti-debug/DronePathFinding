@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.start {
+  background-color: green;
+}
+
+.goal {
+  background-color: red;
+}
+
+.obstacle {
+  background-color: black;
+}
+
+.path {
+  background-color: yellow;
+}

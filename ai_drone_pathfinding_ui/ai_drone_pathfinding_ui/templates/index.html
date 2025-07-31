@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drone Pathfinding</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Drone Pathfinding Grid</h1>
+  <div>
+    <select id="algorithm">
+      <option value="dfs">DFS</option>
+      <option value="bfs" selected>BFS</option>
+      <option value="ucs">UCS</option>
+      <option value="astar">A*</option>
+      <option value="greedy">Greedy</option>
+    </select>
+    <button onclick="findPath()">Find Path</button>
+    <button onclick="resetGrid()">Reset</button>
+  </div>
+  <div id="grid"></div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
